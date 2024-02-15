@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom input</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/dropdown.css" />
+  </head>
+  <body>
+    <section class="dropdown">
+      <div class="container dropdown__container">
+        <div class="header-top dropdown__header-top">
+          <span class="title">Input Playground</span>
+          <h2 class="dropdown__heading heading">Dropdown</h2>
+        </div>
+        <div class="dropdown__wrapper-first">
+          <span class="title">Collapsed</span>
+          <button type="button" class="dropdown__btn">
+            Option
+            <img
+              src="img/right-arrow-backup-2-svgrepo-com.svg"
+              width="11px"
+              height="11px"
+            />
+          </button>
+        </div>
+        <div class="dropdown__wrapper-second">
+          <span class="title">Expanded</span>
+          <button type="button" class="dropdown__btn">
+            Option
+            <img
+              src="img/down-arrow-backup-2-svgrepo-com.svg"
+              width="11px"
+              height="11px"
+            />
+          </button>
+        </div>
+        <div class="dropdown__wrapper-third">
+          <div class="dropdown__inner">
+            <span class="title">Menu Item / Default</span>
+            <button class="dropdown__default">Menu Item</button>
+          </div>
+          <div class="dropdown__inner">
+            <span class="title">Menu Item / Hover</span>
+            <button class="dropdown__hover">Menu Item</button>
+          </div>
+        </div>
+
+        <div class="dropdown__wrapper-four">
+          <span class="title">Options Menu</span>
+          <ul class="dropdown-list">
+            <li class="dropdown__list-item">
+              <a href="" class="dropdown__list-link">Menu Item One</a>
+            </li>
+            <li class="dropdown__list-item">
+              <a href="" class="dropdown__list-link">Menu Item Two</a>
+            </li>
+            <li class="dropdown__list-item">
+              <a href="" class="dropdown__list-link">Menu Item Three</a>
+            </li>
+            <li class="dropdown__list-item">
+              <a href="" class="dropdown__list-link">Menu Item Four</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown__wrapper-five">
+          <span class="title">Expanded with Menu /Check Me</span>
+          <button type="button" class="dropdown__btn">
+            Option
+            <img
+              src="img/down-arrow-backup-2-svgrepo-com.svg"
+              width="11px"
+              height="11px"
+            />
+          </button>
+          <ul class="dropdown__menu">
+            <li class="dropdown__menu-item">
+              <a href="" class="dropdown__menu-link">Menu Item One</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a href="" class="dropdown__menu-link">Menu Item Two</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a href="" class="dropdown__menu-link">Menu Item Three</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a href="" class="dropdown__menu-link">Menu Item Four</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

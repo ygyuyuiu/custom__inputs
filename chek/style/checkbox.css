@@ -1,0 +1,558 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans Symbols", sans-serif;
+  color: #333333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+/* section checkbox */
+.checkbox {
+  background-color: rgb(233, 237, 241);
+}
+.checkbox__container {
+  max-width: 376px;
+  background-color: #fff;
+}
+.header-top {
+  background-color: #f8f8f8;
+  margin: 8px 8px 0 8px;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.title {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 12px;
+}
+.checkbox__heading {
+  margin-bottom: 32px;
+}
+.heading {
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+/* checkbox-form */
+.checkbox__form {
+  margin-left: 40px;
+  display: flex;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+.subtitle {
+  font-size: 12px;
+  color: #666666;
+}
+/* check-1 */
+input[type="checkbox"] {
+  appearance: none;
+}
+label[for="check-1"] {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-bottom: 64px;
+}
+label[for="check-1"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  cursor: pointer;
+}
+label[for="check-1"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="check-1"]::after {
+  opacity: 1;
+}
+
+/* check-2 */
+input[type="checkbox"] {
+  appearance: none;
+}
+label[for="check-2"] {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+label[for="check-2"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  cursor: pointer;
+}
+label[for="check-2"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="check-2"]::after {
+  opacity: 1;
+}
+
+/* check-3 */
+input[type="checkbox"] {
+  appearance: none;
+}
+label[for="check-3"] {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  top: 10px;
+  left: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 64px;
+}
+label[for="check-3"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  cursor: pointer;
+}
+label[for="check-3"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="check-3"]::after {
+  opacity: 1;
+}
+
+/* check-4 */
+input[type="checkbox"] {
+  appearance: none;
+}
+label[for="check-4"] {
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+}
+label[for="check-4"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  cursor: pointer;
+}
+label[for="check-4"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="check-4"]::after {
+  opacity: 1;
+}
+
+/* chekbox example */
+.checkbox__example-heading {
+  padding-left: 40px;
+}
+/* checkbox_wrapper */
+.checkbox__form_flcol {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox__form_flrow {
+  padding-left: 31px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 10px;
+  margin-bottom: 400px;
+}
+.checkbox__label {
+  display: inline-block;
+  padding-left: 24px;
+  font-weight: 600;
+  font-size: 12px;
+  vertical-align: 2px;
+  margin-bottom: 16px;
+}
+
+/* checkbox col */
+input[type="checkbox"] {
+  appearance: none;
+}
+label[for="empty"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty"]::after {
+  opacity: 1;
+}
+
+label[for="filled"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="filled"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="filled"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="filled"]::after {
+  opacity: 1;
+}
+
+label[for="empty-second"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty-second"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty-second"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty-second"]::after {
+  opacity: 1;
+}
+
+label[for="empty-third"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty-third"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty-third"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty-third"]::after {
+  opacity: 1;
+}
+
+/* checkbox row */
+label[for="empty-four"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty-four"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty-four"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty-four"]::after {
+  opacity: 1;
+}
+
+label[for="filled-second"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="filled-second"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="filled-second"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="filled-second"]::after {
+  opacity: 1;
+}
+
+label[for="empty-five"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty-five"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty-five"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty-five"]::after {
+  opacity: 1;
+}
+
+label[for="empty-six"] {
+  cursor: pointer;
+  position: relative;
+}
+label[for="empty-six"]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+label[for="empty-six"]::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label[for="empty-six"]::after {
+  opacity: 1;
+}

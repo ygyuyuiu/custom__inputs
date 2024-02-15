@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans Symbols", sans-serif;
+  color: #333333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* section button */
+.button__section {
+  background-color: rgb(233, 237, 241);
+}
+.button__container {
+  max-width: 423px;
+  background-color: #fff;
+}
+.header-top {
+  background-color: #f8f8f8;
+  margin: 8px 8px 0 8px;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.title {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 12px;
+}
+.button__heading {
+  margin-bottom: 32px;
+}
+.heading {
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+/* button */
+.button__form {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.button__title {
+  margin-bottom: 16px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.button__click {
+  color: #333333;
+}
+.button__prymary {
+  color: #fff;
+  background-color: #333333;
+}
+.button__form-row {
+  margin-left: 40px;
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 32px;
+}
+.button__form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.button__secondary {
+  border: 2px solid #333333;
+  background-color: #fff;
+}
+.button__stroke {
+  background-color: #fff;
+  border: none;
+}
+.button__disabled {
+  color: #666666;
+  background-color: #f0f0f0;
+}

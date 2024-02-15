@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom input</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/checkbox.css" />
+  </head>
+  <body>
+    <section class="checkbox">
+      <div class="container checkbox__container">
+        <div class="header-top checkbox__header-top">
+          <span class="title">Input Playground</span>
+          <h2 class="checkbox__heading heading">Checkboxes</h2>
+        </div>
+
+          <form action="" class="checkbox__form">
+            <div>
+              <input type="checkbox" name="check-1"id="check-1">
+              <label class="subtitle" for="check-1">Check / Empty</label>
+           </div>
+           <div>
+              <input type="checkbox" name="check-2"id="check-2" checked>
+              <label class="subtitle" for="check-2">Check / Filled</label>
+           </div>
+          </form>
+          <form action="" class="checkbox__form">
+            <div>
+              <label class="subtitle" >With Text / Empty</label>
+              <input type="checkbox" name="check-3"id="check-3">
+              <label for="check-3">Empty</label>
+            </div>
+            <div>
+              <label class="subtitle" >With Text / Filled</label>
+              <input type="checkbox" name="check-4"id="check-4"checked>
+              <label for="check-4">Filled</label>
+            </div>
+          </form>
+
+        <div class="checkbox__example">
+          <h2 class="checkbox__example-heading heading">Example</h2>
+          <form action="" class="checkbox__form_flcol">
+            <input type="checkbox" name="empty" id="empty" />
+            <label class="checkbox__label" for="empty">Empty</label>
+            <input type="checkbox" name="filled" id="filled" checked />
+            <label class="checkbox__label" for="filled">Filled</label>
+            <input type="checkbox" name="empty" id="empty-second" />
+            <label class="checkbox__label" for="empty-second">Empty</label>
+            <input type="checkbox" name="empty" id="empty-third" />
+            <label class="checkbox__label" for="empty-third">Empty</label>
+          </form>
+
+          <form action="" class="checkbox__form_flrow">
+            <input type="checkbox" name="empty" id="empty-four" />
+            <label class="checkbox__label" for="empty-four">Empty</label>
+            <input type="checkbox" name="filled" id="filled-second" checked />
+            <label class="checkbox__label" for="filled-second">Filled</label>
+            <input type="checkbox" name="empty" id="empty-five" />
+            <label class="checkbox__label" for="empty-five">Empty</label>
+            <input type="checkbox" name="empty" id="empty-six" />
+            <label class="checkbox__label" for="empty-six">Empty</label>
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>

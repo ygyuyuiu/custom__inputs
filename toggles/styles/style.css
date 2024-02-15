@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans Symbols", sans-serif;
+  color: #333333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* section toogle */
+.checkbox {
+  background-color: rgb(233, 237, 241);
+}
+.toggle__container {
+  max-width: 423px;
+  background-color: #fff;
+}
+.header-top {
+  background-color: #f8f8f8;
+  margin: 8px 8px 0 8px;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.title {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 12px;
+}
+.toggle__heading {
+  margin-bottom: 32px;
+}
+.heading {
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+/* toggle */
+.toggle__label {
+  display: inline-block;
+  margin-left: 35px;
+}
+.toglle__input {
+  appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggle__inner {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+/* оболочка  */
+.toggle__inner::before {
+  display: block;
+  content: "";
+  width: 64px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 34px;
+  border: 1px solid #333333;
+  position: absolute;
+  left: 0;
+  top: 25px;
+
+  transition: background-color, 0.4s;
+}
+/* кнопка */
+.toggle__inner::after {
+  display: block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: #333333;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 27px;
+
+  transition: background-color, 0.4s;
+}
+/* смена цвета при :checked */
+.toglle__input:checked + .toggle__inner::before {
+  background-color: #333333;
+}
+/* переход кнопки в другое положение */
+.toglle__input:checked + .toggle__inner::after {
+  background-color: #fff;
+  transform: translateX(30px);
+}
+/* фокус на кнопку */
+.toglle__input:focus + .toggle__inner::before {
+  outline: 1px solid #333333;
+  outline-offset: 3px;
+}

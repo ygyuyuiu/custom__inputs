@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans Symbols", sans-serif;
+  color: #333333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* section toogle */
+.tooltip {
+  background-color: rgb(233, 237, 241);
+}
+.tooltip__container {
+  max-width: 423px;
+  background-color: #fff;
+}
+.header-top {
+  background-color: #f8f8f8;
+  margin: 8px 8px 0 8px;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.title {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 12px;
+}
+.tooltip__heading {
+  margin-bottom: 32px;
+}
+.heading {
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+/* tooltip */
+.tooltip__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-left: 40px;
+}
+.tooltip__top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: relative;
+}
+.tooltip__top::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #333333 transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 35px;
+  left: 75px;
+  opacity: 0;
+}
+.tooltip__top::after {
+  content: "Top";
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  background-color: #333333;
+  color: #fff;
+  padding: 8px 16px;
+  opacity: 0;
+}
+.tooltip__top:hover::before {
+  opacity: 1;
+}
+.tooltip__top:hover::after {
+  opacity: 1;
+}
+
+.tooltip__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: relative;
+}
+.tooltip__right::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #333333 transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 55px;
+  left: 120px;
+  opacity: 0;
+}
+.tooltip__right::after {
+  content: "Right";
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  background-color: #333333;
+  color: #fff;
+  padding: 8px 16px;
+  opacity: 0;
+}
+.tooltip__right:hover::before {
+  opacity: 1;
+}
+.tooltip__right:hover::after {
+  opacity: 1;
+}
+.tooltip__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: relative;
+}
+.tooltip__bottom::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #333333 transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 75px;
+  left: 85px;
+  opacity: 0;
+}
+.tooltip__bottom::after {
+  content: "Bottom";
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  background-color: #333333;
+  color: #fff;
+  padding: 8px 16px;
+  opacity: 0;
+}
+.tooltip__bottom:hover::before {
+  opacity: 1;
+}
+.tooltip__bottom:hover::after {
+  opacity: 1;
+}
+.tooltip__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: relative;
+  margin-bottom: 485px;
+}
+.tooltip__left::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #333333 transparent;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  opacity: 0;
+}
+.tooltip__left::after {
+  content: "Left";
+  position: absolute;
+  top: 45px;
+  left: 62px;
+  background-color: #333333;
+  color: #fff;
+  padding: 8px 16px;
+  opacity: 0;
+}
+.tooltip__left:hover::before {
+  opacity: 1;
+}
+.tooltip__left:hover::after {
+  opacity: 1;
+}
